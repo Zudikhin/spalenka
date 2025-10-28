@@ -15,6 +15,29 @@
 
   <body>
 
+      <!-- хлебные крошки  -->
+      <!-- <div class="container">
+        <div class="bx-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="/" title="Главная" itemprop="item">
+              <span itemprop="name">Главная</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <div class="dot">/</div>
+            <a href="#" title="Каталог" itemprop="item">
+              <span itemprop="name">Каталог</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <div class="dot">/</div>
+            <span>Наволочки</span>
+          </div>
+        </div>
+      </div> -->
+
+    <div class="plug"></div>
+
     <header class="header">
       <div class="header_top">
         <div class="container">
@@ -72,12 +95,15 @@
         <div class="header_wrap">
           <div class="header_wrap_top">
             <a href="#" class="header_wrap_top_logo">
-              <img src="img/logo.svg" alt="">
+              <img src="img/header_logo.svg" alt="">
             </a>
-            <a href="#" class="header_wrap_top_catalog">
-              <img src="img/header/burger.svg" alt="">
+            <div class="header_wrap_top_catalog">
+              <div class="header_wrap_top_catalog_img">
+                <img src="img/header/burger.svg" alt="" class="header_wrap_top_catalog_burger">
+                <img src="img/close.svg" alt="" class="header_wrap_top_catalog_close">
+              </div>
               <span>Каталог</span>
-            </a>
+            </div>
             <div class="header_wrap_top_search">
               <form action="">
                 <input id="title-search-input" type="text" name="q" value="" size="40" maxlength="50" placeholder="Поиск по товарам" autocomplete="off">
@@ -179,208 +205,882 @@
       </div>
       <a href="#" class="marquee">
         <div class="marquee_track">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
-          <img src="img/marquee/marquee.svg" alt="">
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
         </div>
       </a>
+      <div class="header_catalog">
+        <div class="container">
+          <div class="header_catalog_wrap">
+            <div class="header_catalog_wrap_left">
+              <ul>
+                <li data-target="catalog_1" class="active">
+                  <a href="#">Балаклава</a>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8L14 12L10 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+                <li data-target="catalog_2">
+                  <a href="#">Велосипедки</a>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8L14 12L10 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li data-target="catalog_3">
+                  <a href="#">Кальсоны</a>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8L14 12L10 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_catalog_wrap_right">
+              <div class="header_catalog_wrap_right_item active" id="catalog_1">
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/1.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/2.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/3.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/4.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/5.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/6.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/7.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/8.png" alt="">
+                </a>
+              </div>
+
+              <div class="header_catalog_wrap_right_item" id="catalog_2">
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/1.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/2.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/3.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/4.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/5.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/6.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/7.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/8.png" alt="">
+                </a>
+              </div>
+
+              <div class="header_catalog_wrap_right_item" id="catalog_3">
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/1.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/2.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/3.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/4.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/5.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/6.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/7.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/8.png" alt="">
+                </a>
+              </div>
+
+              <div class="header_catalog_wrap_right_info">
+                <a href="tel:+70000000000" class="header_catalog_wrap_right_info_tel">+7 000 000 00 00</a>
+                <ul>
+                  <li>
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                      <img src="img/footer/wap.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://telegram.org/" target="_blank">
+                      <img src="img/footer/telegram.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="main">
 
-      <div class="container">
-        <div class="bx-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-          <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-            <a href="/" title="Главная" itemprop="item">
-              <span itemprop="name">Главная</span>
+      <section class="section_cats">
+        <div class="container">
+          <div class="section_cats_list">
+            <a href="#" class="section_cats_list_item">
+              <h4>Балаклава</h4>
+              <img src="img/cats/1.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Бриджи</h4>
+              <img src="img/cats/2.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Брюки</h4>
+              <img src="img/cats/3.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Велосипедки</h4>
+              <img src="img/cats/4.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Кальсоны</h4>
+              <img src="img/cats/5.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Капри</h4>
+              <img src="img/cats/6.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Комплект белья</h4>
+              <img src="img/cats/7.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Костюм</h4>
+              <img src="img/cats/8.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Балаклава</h4>
+              <img src="img/cats/1.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Бриджи</h4>
+              <img src="img/cats/2.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Брюки</h4>
+              <img src="img/cats/3.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Велосипедки</h4>
+              <img src="img/cats/4.png" alt="">
+            </a>
+            <a href="#" class="section_cats_list_item">
+              <h4>Кальсоны</h4>
+              <img src="img/cats/5.png" alt="">
             </a>
           </div>
-          <div class="bx-breadcrumb-item" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-            <div class="dot">/</div>
-            <a href="#" title="Каталог" itemprop="item">
-              <span itemprop="name">Каталог</span>
+        </div>
+      </section>
+
+      <section class="home_catalog">
+        <div class="container">
+          <h2>Хиты продаж</h2>
+          <div class="row">
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/1.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">326 ₽</p>
+                    <p class="card_price_old">1 066 ₽</p>
+                  </a>
+                  <h4><a href="#">Наволочка 50х70 набор из 2 шт без молнии</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/2.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 176 ₽</p>
+                    <p class="card_price_old">4 005 ₽</p>
+                  </a>
+                  <h4><a href="#">Oдеяло 1.5 спальное зимнее всесезонное овечья шерсть</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/3.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 640 ₽</p>
+                    <p class="card_price_old">3 471 ₽</p>
+                  </a>
+                  <h4><a href="#">Комплект ночная сорочка с халатом домашним</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/4.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">614 ₽</p>
+                    <p class="card_price_old">1 256 ₽</p>
+                  </a>
+                  <h4><a href="#">Бриджи спортивные хлопок</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/1.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">326 ₽</p>
+                    <p class="card_price_old">1 066 ₽</p>
+                  </a>
+                  <h4><a href="#">Наволочка 50х70 набор из 2 шт без молнии</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/2.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 176 ₽</p>
+                    <p class="card_price_old">4 005 ₽</p>
+                  </a>
+                  <h4><a href="#">Oдеяло 1.5 спальное зимнее всесезонное овечья шерсть</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/3.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 640 ₽</p>
+                    <p class="card_price_old">3 471 ₽</p>
+                  </a>
+                  <h4><a href="#">Комплект ночная сорочка с халатом домашним</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/4.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">614 ₽</p>
+                    <p class="card_price_old">1 256 ₽</p>
+                  </a>
+                  <h4><a href="#">Бриджи спортивные хлопок</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/1.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">326 ₽</p>
+                    <p class="card_price_old">1 066 ₽</p>
+                  </a>
+                  <h4><a href="#">Наволочка 50х70 набор из 2 шт без молнии</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/2.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 176 ₽</p>
+                    <p class="card_price_old">4 005 ₽</p>
+                  </a>
+                  <h4><a href="#">Oдеяло 1.5 спальное зимнее всесезонное овечья шерсть</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/3.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 640 ₽</p>
+                    <p class="card_price_old">3 471 ₽</p>
+                  </a>
+                  <h4><a href="#">Комплект ночная сорочка с халатом домашним</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/4.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">614 ₽</p>
+                    <p class="card_price_old">1 256 ₽</p>
+                  </a>
+                  <h4><a href="#">Бриджи спортивные хлопок</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/1.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">326 ₽</p>
+                    <p class="card_price_old">1 066 ₽</p>
+                  </a>
+                  <h4><a href="#">Наволочка 50х70 набор из 2 шт без молнии</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/2.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 176 ₽</p>
+                    <p class="card_price_old">4 005 ₽</p>
+                  </a>
+                  <h4><a href="#">Oдеяло 1.5 спальное зимнее всесезонное овечья шерсть</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/3.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">1 640 ₽</p>
+                    <p class="card_price_old">3 471 ₽</p>
+                  </a>
+                  <h4><a href="#">Комплект ночная сорочка с халатом домашним</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <button data-id="834" class="bazarow_add_favor">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Добавить в избранное</span>
+                </button>
+                <a href="#" class="card_img">
+                  <img src="img/product/4.png" alt="">
+                </a>
+                <div class="card_body">
+                  <a href="#" class="card_price">
+                    <div class="card_price_percent">
+                      <span>- 22%</span>
+                    </div>
+                    <p class="card_price_current">614 ₽</p>
+                    <p class="card_price_old">1 256 ₽</p>
+                  </a>
+                  <h4><a href="#">Бриджи спортивные хлопок</a></h4>
+                  <div class="card_review">
+                    <div class="card_review_left">
+                      <img src="img/star.svg" alt="">
+                      <span>5</span>
+                    </div>
+                    <a href="#" class="card_review_link">262 отзыва</a>
+                  </div>
+                  <button class="add_cart bttn">
+                    <img src="img/fixed_menu/cart_white.svg" alt="">
+                    <span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_blog">
+        <div class="container">
+          <h2>Блог</h2>
+        </div>
+        <div class="container container-section_blog">
+          <div class="section_blog_list">
+            <a href="#" class="section_blog_list_item">
+              <div class="section_blog_list_item_img">
+                <img src="img/blog/1.webp" alt="">
+              </div>
+              <div class="section_blog_list_item_body">
+                <h4>Будем рады видеть вас здесь</h4>
+                <p>Официальное открытие пространства было 15 июня 2023 года, но еще около полугода до этого мы работали в формате онлайн. Магазин был создан в Казани из-за желания нашего но и смогли бы добавить уют и эстетическую красоту в вашу повседневную....</p>
+                <div class="section_blog_list_item_body_footer">
+                  <div class="section_blog_list_item_body_footer_btn btn_empty">
+                    <span>Читать подробнее</span>
+                  </div>
+                  <span class="section_blog_list_item_body_footer_date">03.03.25</span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="section_blog_list_item">
+              <div class="section_blog_list_item_img">
+                <img src="img/blog/1.webp" alt="">
+              </div>
+              <div class="section_blog_list_item_body">
+                <h4>Будем рады видеть вас здесь</h4>
+                <p>Официальное открытие пространства было 15 июня 2023 года, но еще около полугода до этого мы работали в формате онлайн. Магазин был создан в Казани из-за желания нашего но и смогли бы добавить уют и эстетическую красоту в вашу повседневную....</p>
+                <div class="section_blog_list_item_body_footer">
+                  <div class="section_blog_list_item_body_footer_btn btn_empty">
+                    <span>Читать подробнее</span>
+                  </div>
+                  <span class="section_blog_list_item_body_footer_date">03.03.25</span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="section_blog_list_item">
+              <div class="section_blog_list_item_img">
+                <img src="img/blog/1.webp" alt="">
+              </div>
+              <div class="section_blog_list_item_body">
+                <h4>Будем рады видеть вас здесь</h4>
+                <p>Официальное открытие пространства было 15 июня 2023 года, но еще около полугода до этого мы работали в формате онлайн. Магазин был создан в Казани из-за желания нашего но и смогли бы добавить уют и эстетическую красоту в вашу повседневную....</p>
+                <div class="section_blog_list_item_body_footer">
+                  <div class="section_blog_list_item_body_footer_btn btn_empty">
+                    <span>Читать подробнее</span>
+                  </div>
+                  <span class="section_blog_list_item_body_footer_date">03.03.25</span>
+                </div>
+              </div>
             </a>
           </div>
-          <div class="bx-breadcrumb-item">
-            <div class="dot">/</div>
-            <span>Наволочки</span>
-          </div>
         </div>
-      </div>
-
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab sunt minus corrupti sapiente recusandae quia quibusdam eaque iure eos esse laborum impedit nisi ut ratione non quod optio fuga provident, dolor velit assumenda magnam. Velit optio ullam non cumque, ratione voluptatibus cum dolorum enim ex recusandae culpa fugit natus distinctio soluta perspiciatis laudantium illum maiores delectus voluptates possimus nihil magnam, asperiores fugiat atque! Fugit id, accusantium autem asperiores rerum aliquid et molestias aut culpa ad hic, cum dignissimos nulla odio quas perspiciatis quidem incidunt labore officiis repellendus facilis facere optio minima explicabo. Necessitatibus porro dolor dolorum tempora expedita sunt, sequi harum ea distinctio, nihil iusto exercitationem deleniti aliquid dignissimos excepturi at nostrum quas possimus, asperiores rerum consectetur. Delectus, porro cupiditate minima id repellat deserunt neque dicta hic repellendus quidem cum commodi! Laboriosam eligendi quasi ipsum ullam nam doloribus molestias voluptas nulla libero harum quam ratione et assumenda autem maiores odit natus fugiat hic odio soluta, tenetur neque. Quaerat, dolore? Inventore cumque exercitationem corporis ratione harum quod, impedit nemo voluptate ipsam dolorum odit a enim. Quia nam, deleniti voluptates assumenda enim exercitationem harum saepe veniam unde perferendis adipisci, libero ducimus porro neque deserunt, in accusamus! Voluptatibus mollitia expedita minima facilis?
-
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-md-4 col-xl-3">
-            <div class="card">
-              <button data-id="834" class="bazarow_add_favor">
-                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Добавить в избранное</span>
-              </button>
-              <a href="#" class="card_img">
-                <img src="img/product/1.png" alt="">
-              </a>
-              <div class="card_body">
-                <a href="#" class="card_price">
-                  <div class="card_price_percent">
-                    <span>- 22%</span>
-                  </div>
-                  <p class="card_price_current">326 ₽</p>
-                  <p class="card_price_old">1 066 ₽</p>
-                </a>
-                <h4><a href="#">Наволочка 50х70 набор из 2 шт без молнии</a></h4>
-                <div class="card_review">
-                  <div class="card_review_left">
-                    <img src="img/star.svg" alt="">
-                    <span>5</span>
-                  </div>
-                  <a href="#" class="card_review_link">262 отзыва</a>
-                </div>
-                <button class="add_cart bttn">
-                  <img src="img/fixed_menu/cart_white.svg" alt="">
-                  <span>В корзину</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-xl-3">
-            <div class="card">
-              <button data-id="834" class="bazarow_add_favor">
-                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Добавить в избранное</span>
-              </button>
-              <a href="#" class="card_img">
-                <img src="img/product/2.png" alt="">
-              </a>
-              <div class="card_body">
-                <a href="#" class="card_price">
-                  <div class="card_price_percent">
-                    <span>- 22%</span>
-                  </div>
-                  <p class="card_price_current">1 176 ₽</p>
-                  <p class="card_price_old">4 005 ₽</p>
-                </a>
-                <h4><a href="#">Oдеяло 1.5 спальное зимнее всесезонное овечья шерсть</a></h4>
-                <div class="card_review">
-                  <div class="card_review_left">
-                    <img src="img/star.svg" alt="">
-                    <span>5</span>
-                  </div>
-                  <a href="#" class="card_review_link">262 отзыва</a>
-                </div>
-                <button class="add_cart bttn">
-                  <img src="img/fixed_menu/cart_white.svg" alt="">
-                  <span>В корзину</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-xl-3">
-            <div class="card">
-              <button data-id="834" class="bazarow_add_favor">
-                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Добавить в избранное</span>
-              </button>
-              <a href="#" class="card_img">
-                <img src="img/product/3.png" alt="">
-              </a>
-              <div class="card_body">
-                <a href="#" class="card_price">
-                  <div class="card_price_percent">
-                    <span>- 22%</span>
-                  </div>
-                  <p class="card_price_current">1 640 ₽</p>
-                  <p class="card_price_old">3 471 ₽</p>
-                </a>
-                <h4><a href="#">Комплект ночная сорочка с халатом домашним</a></h4>
-                <div class="card_review">
-                  <div class="card_review_left">
-                    <img src="img/star.svg" alt="">
-                    <span>5</span>
-                  </div>
-                  <a href="#" class="card_review_link">262 отзыва</a>
-                </div>
-                <button class="add_cart bttn">
-                  <img src="img/fixed_menu/cart_white.svg" alt="">
-                  <span>В корзину</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-xl-3">
-            <div class="card">
-              <button data-id="834" class="bazarow_add_favor">
-                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.4392 1.40039C20.2432 1.40039 22.7992 4.97639 22.7992 8.31239C22.7992 15.0684 12.1912 20.6004 11.9992 20.6004C11.8072 20.6004 1.19922 15.0684 1.19922 8.31239C1.19922 4.97639 3.75522 1.40039 7.55922 1.40039C9.74322 1.40039 11.1712 2.49239 11.9992 3.45239C12.8272 2.49239 14.2552 1.40039 16.4392 1.40039Z" stroke="#797979" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Добавить в избранное</span>
-              </button>
-              <a href="#" class="card_img">
-                <img src="img/product/4.png" alt="">
-              </a>
-              <div class="card_body">
-                <a href="#" class="card_price">
-                  <div class="card_price_percent">
-                    <span>- 22%</span>
-                  </div>
-                  <p class="card_price_current">614 ₽</p>
-                  <p class="card_price_old">1 256 ₽</p>
-                </a>
-                <h4><a href="#">Бриджи спортивные хлопок</a></h4>
-                <div class="card_review">
-                  <div class="card_review_left">
-                    <img src="img/star.svg" alt="">
-                    <span>5</span>
-                  </div>
-                  <a href="#" class="card_review_link">262 отзыва</a>
-                </div>
-                <button class="add_cart bttn">
-                  <img src="img/fixed_menu/cart_white.svg" alt="">
-                  <span>В корзину</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+      </section>
 
     </main>
 
@@ -400,6 +1100,219 @@
       <a href="#" class="fixed_menu_item">
         <img src="img/fixed_menu/user.svg" alt="">
       </a>
+    </div>
+
+    <div class="drodown">
+      <div class="container">
+        <div class="drodown_top">
+          <div class="drodown_top_close">
+            <img src="img/close.svg" alt="">
+          </div>
+          <a href="#" class="drodown_top_logo">
+            <img src="img/header_logo.svg" alt="">
+          </a>
+        </div>
+        <div class="drodown_cats">
+          <ul>
+            <li class="drop" data-target="drop_1">
+              <span>Балаклава</span>
+              <img src="img/arrow_black.svg" alt="">
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+            <li class="drop" data-target="drop_2">
+              <span>Велосипедки</span>
+              <img src="img/arrow_black.svg" alt="">
+            </li>
+            <li class="drop" data-target="drop_3">
+              <span>Кальсоны</span>
+              <img src="img/arrow_black.svg" alt="">
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="drodown_menu">
+          <ul>
+            <li>
+              <a href="#">Карьера в Спаленке</a>
+            </li>
+            <li>
+              <a href="#">Студии планирования</a>
+            </li>
+            <li>
+              <a href="#">Адреса магазинов</a>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">Пункты выдачи</a>
+            </li>
+            <li>
+              <a href="#">Для бизнеса</a>
+            </li>
+          </ul>
+        </div>
+        <div class="drodown_footer">
+          <a href="tel:+70000000000" class="drodown_footer_tel">+7 000 000 00 00</a>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/footer/wap.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/telegram.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="drodown_item" id="drop_1">
+        <div class="drodown_item_back">
+          <img src="img/arrow_black.svg" alt="">
+          <span>Назад</span>
+        </div>
+        <h3>Балаклава</h3>
+        <div class="drodown_item_body">
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/1.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/2.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/3.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/4.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/5.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/6.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/7.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/8.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="drodown_item" id="drop_2">
+        <div class="drodown_item_back">
+          <img src="img/arrow_black.svg" alt="">
+          <span>Назад</span>
+        </div>
+        <h3>Велосипедки</h3>
+        <div class="drodown_item_body">
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/1.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/2.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/3.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/4.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/5.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/6.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/7.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/8.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="drodown_item" id="drop_3">
+        <div class="drodown_item_back">
+          <img src="img/arrow_black.svg" alt="">
+          <span>Назад</span>
+        </div>
+        <h3>Кальсоны</h3>
+        <div class="drodown_item_body">
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/1.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/2.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/3.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/4.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/5.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/6.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/7.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/8.png" alt="">
+          </a>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
@@ -479,7 +1392,7 @@
         <div class="footer_mid">
           <div class="footer_mid_left">
             <a href="#">
-              <img src="img/logo.svg" alt="">
+              <img src="img/footer_logo.svg" alt="">
             </a>
             <ul>
               <li>© 2025. Все права защищены</li>

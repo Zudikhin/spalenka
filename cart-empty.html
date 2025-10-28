@@ -393,17 +393,32 @@
       </div>
     </header>
 
-    <section class="notfound">
-      <div class="container">
-        <div class="notfound_block">
-          <h2>Ой ... что-то <br> пошло не так</h2>
-          <p>Страница не найдена, но у нас есть еще много всего интересного</p>
-          <a href="#">На главную</a>
-          <img src="img/404/404.svg" alt="">
+    <main class="main">
+
+      <section class="section_empty">
+        <div class="container">
+          <div class="bx-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <a href="/" title="Главная" itemprop="item">
+                <span itemprop="name">Главная</span>
+              </a>
+            </div>
+            <div class="bx-breadcrumb-item">
+              <div class="dot">/</div>
+              <span>Корзина товаров</span>
+            </div>
+          </div>
+          <h1>Корзина товаров</h1>
+          <div class="section_empty_wrap">
+            <img src="img/empty/empty_cart.svg" alt="">
+            <h2>Ваша корзина на данный момент пуста</h2>
+            <p>Прежде чем приступить к оформлению заказа, вы должны добавить некоторые товары в корзину. На странице  <b>"Каталог"</b> вы найдете много интересных товаров.</p>
+            <a href="#" class="bttn">Перейти в каталог</a>
+          </div>
         </div>
-      </div>
-      <img src="img/404/404.svg" alt="" class="notfound_desktop">
-    </section>
+      </section>
+
+    </main>
 
     <div class="fixed_menu">
       <a href="#" class="fixed_menu_item current">
@@ -636,7 +651,7 @@
       </div>
     </div>
 
-    <footer class="footer footer-nomargin">
+    <footer class="footer">
       <div class="container">
         <div class="footer_main">
           <div class="footer_main_left">
