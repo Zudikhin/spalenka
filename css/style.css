@@ -810,6 +810,10 @@ button {
   }
 }
 
+sup {
+  top: -0.3em;
+}
+
 .footer {
   margin-top: 64px;
   padding-bottom: 90px;
@@ -2410,6 +2414,352 @@ button {
   }
   .section_empty_wrap .bttn {
     margin-top: 52px;
+  }
+}
+
+.personal {
+  padding-top: 0px;
+}
+.personal h1 {
+  margin-top: 22px;
+}
+.personal .bx-authform-formgroup-container {
+  margin-bottom: 15px;
+}
+.personal .bx-authform-formgroup-container .personal_block_wrap_label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #000;
+  margin-bottom: 5px;
+}
+.personal .bx-authform-formgroup-container .personal_block_wrap_label sup {
+  color: red;
+}
+.personal .bx-authform-formgroup-container .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.personal .bx-authform-formgroup-container .checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  color: #474747;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.personal .bx-authform-formgroup-container .checkbox label .checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background: linear-gradient(81.95deg, #108AEE -28.49%, #DC8CE1 48%, #FF408E 96.83%);
+  border-radius: 50%;
+}
+.personal .bx-authform-formgroup-container .checkbox label .checkmark::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: none;
+}
+.personal .bx-authform-formgroup-container .checkbox label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.personal .bx-authform-formgroup-container .checkbox label input:checked ~ .checkmark::after {
+  display: block;
+}
+.personal .bx-authform-formgroup-container .checkbox label a {
+  color: #474747;
+  text-decoration: underline;
+}
+.personal .bx-authform-formgroup-container .checkbox label a:hover {
+  text-decoration: none;
+}
+.personal .bx-authform-formgroup-container-last {
+  margin-bottom: 0px;
+}
+.personal_wrap {
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-top: 12px;
+}
+.personal_wrap_left .btn_empty {
+  height: 65px;
+  position: relative;
+  border-radius: 10px;
+  background: var(--main-gradient);
+  padding: 1px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.personal_wrap_left .btn_empty::after {
+  content: "";
+  position: absolute;
+  inset: 1px; /* отступ внутрь на толщину рамки */
+  border-radius: 9px; /* чуть меньше радиус, чтобы повторить форму */
+  background: #fff; /* внутренний фон */
+  z-index: 0;
+}
+.personal_wrap_left .btn_empty span {
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+}
+.personal_wrap_left .btn_empty:hover {
+  background: #fff;
+}
+.personal_wrap_left .btn_empty:hover::after {
+  background: #fff;
+}
+.personal_wrap_left .bttn {
+  width: 100%;
+  display: block;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+}
+.personal_wrap_right {
+  position: relative;
+  padding-top: 22px;
+  border-top: 1px solid #EAEAEA;
+  margin-top: 15px;
+}
+.personal_wrap_right_main_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.personal_wrap_right_main_top h2 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 30px;
+}
+.personal_wrap_right_main_body {
+  margin-top: 22px;
+}
+.personal_wrap_right_main_body p {
+  font-size: 12px;
+  color: #515151;
+}
+.personal_wrap_right_main_body .bttn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  height: 65px;
+  margin-top: 22px;
+}
+.personal_wrap_right_main_body .bttn span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+.personal_wrap_right_main_body .bttn svg {
+  margin-left: 10px;
+}
+.personal_wrap_right_banner {
+  margin-top: 22px;
+  display: block;
+}
+.personal_reset {
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-top: 12px;
+}
+.personal_reset_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.personal_reset_block img {
+  margin-bottom: 10px;
+}
+.personal_reset_block p {
+  text-align: center;
+  color: #515151;
+}
+.personal_reset_block form {
+  margin-top: 15px;
+}
+.personal_reset_block form .bttn {
+  width: 100%;
+  display: block;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .personal_reset {
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .personal_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .personal_wrap_left {
+    width: 300px;
+    min-width: 300px;
+    position: relative;
+  }
+  .personal_wrap_left::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0px;
+    height: 100%;
+    width: 1px;
+    background-color: #EAEAEA;
+  }
+  .personal_wrap_right {
+    width: calc(100% - 350px);
+    margin-top: 0px;
+    padding-top: 0px;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .personal_wrap_right_main_body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .personal_wrap_right_main_body .bttn {
+    width: auto;
+    padding: 0px 40px;
+  }
+  .personal_wrap_right_banner {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .personal .bx-authform-formgroup-container .personal_block_wrap_label {
+    font-size: 15px;
+  }
+  .personal .bx-authform-formgroup-container-last {
+    margin-top: 25px;
+  }
+  .personal_wrap {
+    margin-top: 32px;
+    padding: 30px;
+  }
+  .personal_wrap_left {
+    width: 350px;
+    min-width: 350px;
+  }
+  .personal_wrap_left::after {
+    right: -50px;
+  }
+  .personal_wrap_left .btn_empty {
+    margin-top: 25px;
+  }
+  .personal_wrap_right {
+    width: calc(100% - 450px);
+  }
+  .personal_wrap_right_main_top h2 {
+    font-size: 28px;
+  }
+  .personal_wrap_right_main_body {
+    margin-top: 32px;
+    padding-left: 70px;
+  }
+  .personal_wrap_right_main_body p {
+    font-size: 16px;
+    max-width: 566px;
+  }
+  .personal_reset {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1600px) {
+  .personal_wrap {
+    padding: 40px;
+  }
+  .personal_wrap_left {
+    width: 440px;
+    min-width: 440px;
+  }
+  .personal_wrap_right {
+    width: calc(100% - 540px);
   }
 }
 
