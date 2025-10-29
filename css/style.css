@@ -481,6 +481,46 @@ button {
 .card .bazarow_add_favor span {
   display: none;
 }
+.card_wrap {
+  position: relative;
+}
+.card_wrap_fast {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: -1;
+}
+.card_wrap_fast img {
+  margin-bottom: 4px;
+}
+.card_wrap_fast span {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
 .card_img img {
   width: 100%;
 }
@@ -600,10 +640,6 @@ button {
 .card .add_cart span {
   display: none;
 }
-.card:hover {
-  -webkit-box-shadow: 0px 20px 20px 0px rgba(92, 8, 75, 0.1019607843);
-          box-shadow: 0px 20px 20px 0px rgba(92, 8, 75, 0.1019607843);
-}
 @media (min-width: 1200px) {
   .card_body {
     padding: 20px;
@@ -676,6 +712,14 @@ button {
     line-height: 24px;
     letter-spacing: 0%;
     color: #fff;
+  }
+  .card:hover {
+    -webkit-box-shadow: 0px 20px 20px 0px rgba(92, 8, 75, 0.1019607843);
+            box-shadow: 0px 20px 20px 0px rgba(92, 8, 75, 0.1019607843);
+  }
+  .card:hover .card_wrap_fast {
+    opacity: 1;
+    z-index: 1;
   }
 }
 
