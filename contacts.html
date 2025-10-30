@@ -395,7 +395,7 @@
 
     <main class="main">
 
-      <section class="personal">
+      <section class="contacts">
         <div class="container">
           <div class="bx-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
             <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -405,25 +405,133 @@
             </div>
             <div class="bx-breadcrumb-item">
               <div class="dot">/</div>
-              <span>Восстановление пароля</span>
+              <span>Контакты</span>
             </div>
           </div>
-          <h1>Восстановление пароля</h1>
-          <div class="personal_reset">
-            <div class="personal_reset_block">
-              <p>Забыли свой пароль? Укажите свой Email или имя пользователя. Ссылку на создание нового пароля вы получите по электронной почте.</p>
-              <form action="">
-                <div class="bx-authform-formgroup-container">
-                  <div class="personal_block_wrap_label">Email или логин <sup>*</sup></div>
-                  <div class="personal_block_wrap_container">
-                    <input type="text" name="USER_LOGIN" maxlength="255" value="" placeholder="Введите email адрес или логин">
+          <h1>Наши контакты</h1>
+        </div>
+        <div class="contacts_nav">
+          <div class="container">
+            <div class="contacts_nav_wrap">
+              <div class="contacts_nav_wrap_item active" data-target="city_1">
+                <span>Санкт-Петербург</span>
+              </div>
+              <div class="contacts_nav_wrap_item" data-target="city_2">
+                <span>Москва</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts_item active" id="city_1">
+          <div class="container">
+            <div class="contacts_item_wrap">
+              <div class="contacts_item_wrap_left">
+                <div class="contacts_item_wrap_left_block">
+                  <div class="contacts_item_wrap_left_block_img">
+                    <img src="img/contacts/adres.svg" alt="">
+                  </div>
+                  <div class="contacts_item_wrap_left_block_text">
+                    <span>Адрес:</span>
+                    <p>90056734, Санкт-Петербург, Poccия, невский проспект</p>
                   </div>
                 </div>
-                <div class="bx-authform-formgroup-container bx-authform-formgroup-container-last">
-                  <input type="submit" class="new_btn bttn" name="register_submit_button" value="Сбросить пароль">
+                <div class="contacts_item_wrap_left_block">
+                  <div class="contacts_item_wrap_left_block_img">
+                    <img src="img/contacts/tel.svg" alt="">
+                  </div>
+                  <div class="contacts_item_wrap_left_block_text">
+                    <span>Телефон:</span>
+                    <a href="tel:+70000000000" class="tel">+7 000 000 00 00 </a>
+                  </div>
                 </div>
-              </form>
-            </div>              
+                <div class="contacts_item_wrap_left_block">
+                  <div class="contacts_item_wrap_left_block_img">
+                    <img src="img/contacts/mail.svg" alt="">
+                  </div>
+                  <div class="contacts_item_wrap_left_block_text">
+                    <span>Email:</span>
+                    <a href="mailto:frame@mail.ru" class="mail">frame@mail.ru</a>
+                  </div>
+                </div>
+                <div class="contacts_item_wrap_left_footer">
+                  <div class="contacts_item_wrap_left_footer_social">
+                    <span>Мы в соц.сетях:</span>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="img/contacts/insta.svg" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/contacts/vk.svg" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>* Instagram является запрещенным в РФ</p>
+                </div>
+              </div>
+              <div class="contacts_item_wrap_right">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7767cb849b6a55fd2011380815f99d3ebae5b376a0031a91e0e59e993d3cdfaf&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts_item" id="city_2">
+          <div class="container">
+            <div class="contacts_item_wrap">
+              <div class="contacts_item_wrap_left">
+                <div class="contacts_item_wrap_left_block">
+                  <div class="contacts_item_wrap_left_block_img">
+                    <img src="img/contacts/adres.svg" alt="">
+                  </div>
+                  <div class="contacts_item_wrap_left_block_text">
+                    <span>Адрес:</span>
+                    <p>90056734, Mосква, Poccия, улица Варшавская, 37/5, кв.574</p>
+                  </div>
+                </div>
+                <div class="contacts_item_wrap_left_block">
+                  <div class="contacts_item_wrap_left_block_img">
+                    <img src="img/contacts/tel.svg" alt="">
+                  </div>
+                  <div class="contacts_item_wrap_left_block_text">
+                    <span>Телефон:</span>
+                    <a href="tel:+70000000000" class="tel">+7 000 000 00 00 </a>
+                  </div>
+                </div>
+                <div class="contacts_item_wrap_left_block">
+                  <div class="contacts_item_wrap_left_block_img">
+                    <img src="img/contacts/mail.svg" alt="">
+                  </div>
+                  <div class="contacts_item_wrap_left_block_text">
+                    <span>Email:</span>
+                    <a href="mailto:frame@mail.ru" class="mail">frame@mail.ru</a>
+                  </div>
+                </div>
+                <div class="contacts_item_wrap_left_footer">
+                  <div class="contacts_item_wrap_left_footer_social">
+                    <span>Мы в соц.сетях:</span>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="img/contacts/insta.svg" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/contacts/vk.svg" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>* Instagram является запрещенным в РФ</p>
+                </div>
+              </div>
+              <div class="contacts_item_wrap_right">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78039934caf5addcdc902c33670d609944a675297c352beba2cc25fd18dd4658&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -443,8 +551,8 @@
       <a href="#" class="fixed_menu_item">
         <img src="img/fixed_menu/fav.svg" alt="">
       </a>
-      <a href="#" class="fixed_menu_item current">
-        <img src="img/fixed_menu/user_white.svg" alt="">
+      <a href="#" class="fixed_menu_item">
+        <img src="img/fixed_menu/user.svg" alt="">
       </a>
     </div>
 
