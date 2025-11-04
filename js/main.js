@@ -83,6 +83,40 @@ $(document).ready(function() {
     }
   });
 
+  $('.slider_collection_block_wrap').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    autoplaySpeed: 5000,
+    infinite: true,
+    cssEase: 'linear',
+    arrows: true,
+    fade: false,
+    prevArrow: $('.slider_collection_block_text_arrows_prev'),
+    nextArrow: $('.slider_collection_block_text_arrows_next'),
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  });
+
+  $('[data-fancybox="collection"]').fancybox({
+    loop: true,               // зацикливает просмотр
+    buttons: [
+      "zoom",
+      "slideShow",
+      "thumbs",
+      "close"
+    ],
+    animationEffect: "zoom",  // эффект анимации
+    transitionEffect: "fade"  // плавное переключение
+  });
+
 
   $('input[type=tel], input.phone').each(function(){
     $(this)

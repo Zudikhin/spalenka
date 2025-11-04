@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Спаленка</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+
+  <body>
+
+    <div class="plug"></div>
+
+    <header class="header">
+      <div class="header_top">
+        <div class="container">
+          <div class="header_top_wrap">
+            <div class="header_top_wrap_city">
+              <img src="img/header/geo.svg" alt="">
+              <span>Москва</span>
+            </div>
+            <div class="header_top_wrap_right">
+              <ul>
+                <li>
+                  <a href="#">
+                    Карьера в Спаленке
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Студии планирования
+                    <span>20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Адреса магазинов
+                    <span>22</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Пункты выдачи
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Спаленка бонус
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Для бизнеса
+                  </a>
+                </li>
+              </ul>
+              <a href="tel:+70000000000" class="header_top_wrap_right_tel">+7 (000) 000-00-00</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header_wrap">
+          <div class="header_wrap_top">
+            <a href="#" class="header_wrap_top_logo">
+              <img src="img/header_logo.svg" alt="">
+            </a>
+            <div class="header_wrap_top_catalog">
+              <div class="header_wrap_top_catalog_img">
+                <img src="img/header/burger.svg" alt="" class="header_wrap_top_catalog_burger">
+                <img src="img/close.svg" alt="" class="header_wrap_top_catalog_close">
+              </div>
+              <span>Каталог</span>
+            </div>
+            <div class="header_wrap_top_search">
+              <form action="">
+                <input id="title-search-input" type="text" name="q" value="" size="40" maxlength="50" placeholder="Поиск по товарам" autocomplete="off">
+                <input class="form_hide_input" name="s" disabled="" type="submit" value="Поиск">
+                <button>
+                  <img src="img/header/search.svg" alt="">
+                </button>
+              </form>
+            </div>
+            <div class="header_wrap_top_list">
+              <a href="#">
+                <div class="favor-list-wrap fill">
+                  <div class="favor-list-wrap_block">
+                    <p class="favor-list-wrap_block_icon">4</p>
+                  </div>
+                </div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.4056 4C19.7517 4 22 7.16625 22 10.12C22 16.1019 12.6689 21 12.5 21C12.3311 21 3 16.1019 3 10.12C3 7.16625 5.24833 4 8.59444 4C10.5156 4 11.7717 4.96688 12.5 5.81688C13.2283 4.96688 14.4844 4 16.4056 4Z" stroke-width="1.95" stroke-linecap="round" stroke-linejoin="round" stroke="#000"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_2124_52568" x1="-0.491556" y1="38" x2="26.0262" y2="33.8071" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#108AEE"/>
+                  <stop offset="0.610352" stop-color="#DC8CE1"/>
+                  <stop offset="1" stop-color="#FF408E"/>
+                  </linearGradient>
+                  </defs>
+                </svg>
+                <span>Избранное</span>
+              </a>
+              <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.817 4.16714C15.1967 4.53487 15.4994 4.97449 15.7075 5.46037C15.9156 5.94625 16.0249 6.46869 16.0291 6.99725C16.0333 7.5258 15.9323 8.04991 15.7319 8.53903C15.5316 9.02816 15.2359 9.47253 14.8621 9.84625C14.4883 10.22 14.0439 10.5156 13.5547 10.7159C13.0656 10.9161 12.5414 11.017 12.0129 11.0128C11.4843 11.0085 10.9619 10.899 10.4761 10.6909C9.99023 10.4827 9.55067 10.1799 9.183 9.80014C8.44693 9.05073 8.03661 8.04096 8.04132 6.99054C8.04603 5.94012 8.4654 4.93407 9.20817 4.1913C9.95093 3.44853 10.957 3.02917 12.0074 3.02445C13.0578 3.01974 14.0676 3.43106 14.817 4.16714ZM12 14.0081C16.554 14.0081 21 15.9751 21 19.0001V20.0001C21 20.2654 20.8946 20.5197 20.7071 20.7072C20.5196 20.8948 20.2652 21.0001 20 21.0001H4C3.73478 21.0001 3.48043 20.8948 3.29289 20.7072C3.10536 20.5197 3 20.2654 3 20.0001V19.0001C3 15.9741 7.446 14.0081 12 14.0081Z" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" stroke="#000"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_2124_52571" x1="-0.307789" y1="38.9759" x2="24.9358" y2="35.3997" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#108AEE"/>
+                  <stop offset="0.610352" stop-color="#DC8CE1"/>
+                  <stop offset="1" stop-color="#FF408E"/>
+                  </linearGradient>
+                  </defs>
+                </svg>
+                <span>Войти</span>
+              </a>
+              <a href="#">
+                <div id="bx_basketpCwjw4" class="bx-basket bx-opener">
+                  <div class="small_cart filled">
+                    <p>0</p>
+                  </div>
+                </div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.55579 5.99981L5.89875 3H4M8.28917 14.2088L6.55579 6.00056H19.0151C19.6426 6.00056 20.1091 6.58778 19.9777 7.21024L18.4998 14.2103C18.4525 14.434 18.3311 14.6344 18.1559 14.7781C17.9807 14.9218 17.7623 15.0001 17.5371 15H9.25036C8.78675 15 8.38662 14.6708 8.28844 14.2103L8.28917 14.2088Z" stroke-width="1.93939" stroke-linecap="round" stroke-linejoin="round" stroke="#000"/>
+                  <path d="M17.497 19C17.4313 19.0004 17.3664 19.0137 17.3059 19.0392C17.2454 19.0647 17.1905 19.1019 17.1443 19.1486C17.0982 19.1953 17.0617 19.2506 17.0369 19.3114C17.0122 19.3722 16.9996 19.4373 17 19.503C17.0004 19.5687 17.0137 19.6336 17.0392 19.6941C17.0647 19.7546 17.1019 19.8095 17.1486 19.8557C17.1953 19.9018 17.2506 19.9383 17.3114 19.9631C17.3722 19.9878 17.4373 20.0004 17.503 20C17.6356 19.9992 17.7625 19.9458 17.8557 19.8514C17.9489 19.7571 18.0008 19.6296 18 19.497C17.9992 19.3644 17.9458 19.2375 17.8514 19.1443C17.7571 19.0511 17.6296 18.9992 17.497 19Z" fill="url(#paint1_linear_2124_52562)" stroke-width="1.93939" stroke-linecap="round" stroke-linejoin="round" stroke="#000"/>
+                  <path d="M9.49801 19C9.22147 19 8.99702 19.2242 9.00003 19.5005C9.00003 19.633 9.05271 19.76 9.14647 19.8537C9.24024 19.9474 9.36741 20 9.50002 20C9.63262 20 9.75979 19.9474 9.85356 19.8537C9.94732 19.76 10 19.633 10 19.5005C10 19.4347 9.98701 19.3695 9.96177 19.3087C9.93653 19.2479 9.89954 19.1927 9.85291 19.1462C9.80628 19.0997 9.75094 19.0629 9.69004 19.0378C9.62914 19.0127 9.56389 18.9999 9.49801 19Z" fill="url(#paint3_linear_2124_52562)" stroke-width="1.93939" stroke-linecap="round" stroke-linejoin="round" stroke="#000"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_2124_52562" x1="1.05974" y1="27" x2="23.1623" y2="22.8307" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#108AEE"/>
+                  <stop offset="0.610352" stop-color="#DC8CE1"/>
+                  <stop offset="1" stop-color="#FF408E"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_2124_52562" x1="16.8162" y1="21" x2="18.2187" y2="20.8016" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#108AEE"/>
+                  <stop offset="0.610352" stop-color="#DC8CE1"/>
+                  <stop offset="1" stop-color="#FF408E"/>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_2124_52562" x1="16.8162" y1="21" x2="18.2187" y2="20.8016" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#108AEE"/>
+                  <stop offset="0.610352" stop-color="#DC8CE1"/>
+                  <stop offset="1" stop-color="#FF408E"/>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear_2124_52562" x1="8.81623" y1="21" x2="10.2187" y2="20.8016" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#108AEE"/>
+                  <stop offset="0.610352" stop-color="#DC8CE1"/>
+                  <stop offset="1" stop-color="#FF408E"/>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear_2124_52562" x1="8.81623" y1="21" x2="10.2187" y2="20.8016" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#108AEE"/>
+                  <stop offset="0.610352" stop-color="#DC8CE1"/>
+                  <stop offset="1" stop-color="#FF408E"/>
+                  </linearGradient>
+                  </defs>
+                </svg>
+                <span>Корзина</span>
+              </a>
+            </div>
+          </div>
+          <div class="header_wrap_bottom">
+            <div class="header_wrap_bottom_burger">
+              <img src="img/header/burger.svg" alt="">
+            </div>
+            <div id="title-search" class="header_wrap_bottom_search">
+              <form action="#">
+                <input id="title-search-input" type="text" name="q" value="" size="40" maxlength="50" placeholder="Поиск по товарам" autocomplete="off">
+                <input class="form_hide_input" name="s" disabled="" type="submit" value="Поиск">
+                <button>
+                  <img src="img/header/search.svg" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="marquee">
+        <div class="marquee_track">
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+          <span>осенние скидки</span>
+        </div>
+      </a>
+      <div class="header_catalog">
+        <div class="container">
+          <div class="header_catalog_wrap">
+            <div class="header_catalog_wrap_left">
+              <ul>
+                <li data-target="catalog_1" class="active">
+                  <a href="#">Балаклава</a>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8L14 12L10 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+                <li data-target="catalog_2">
+                  <a href="#">Велосипедки</a>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8L14 12L10 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li data-target="catalog_3">
+                  <a href="#">Кальсоны</a>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8L14 12L10 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+                <li>
+                  <a href="#">Бриджи</a>
+                </li>
+                <li>
+                  <a href="#">Брюки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_catalog_wrap_right">
+              <div class="header_catalog_wrap_right_item active" id="catalog_1">
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/1.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/2.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/3.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/4.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/5.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/6.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/7.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/8.png" alt="">
+                </a>
+              </div>
+
+              <div class="header_catalog_wrap_right_item" id="catalog_2">
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/1.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/2.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/3.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/4.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/5.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/6.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/7.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/8.png" alt="">
+                </a>
+              </div>
+
+              <div class="header_catalog_wrap_right_item" id="catalog_3">
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/1.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/2.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/3.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/4.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/5.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/6.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/7.png" alt="">
+                </a>
+                <a href="#" class="header_catalog_wrap_right_item_block">
+                  <h4>Дочерняя</h4>
+                  <img src="img/cats/8.png" alt="">
+                </a>
+              </div>
+
+              <div class="header_catalog_wrap_right_info">
+                <a href="tel:+70000000000" class="header_catalog_wrap_right_info_tel">+7 000 000 00 00</a>
+                <ul>
+                  <li>
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                      <img src="img/footer/wap.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://telegram.org/" target="_blank">
+                      <img src="img/footer/telegram.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="collection">
+        <div class="container">
+          <div class="bx-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <a href="/" title="Главная" itemprop="item">
+                <span itemprop="name">Главная</span>
+              </a>
+            </div>
+            <div class="bx-breadcrumb-item">
+              <div class="dot">/</div>
+              <span>Колекции</span>
+            </div>
+          </div>
+          <h1>Колекции</h1>
+          <div class="collection_wrap">
+
+            <div class="collection_item">
+              <div class="collection_item_img">
+                <img src="img/collection/1.png" alt="">
+              </div>
+              <div class="collection_item_text">
+                <div class="collection_item_text_main">
+                  <h2>Заготовок коллекции</h2>
+                  <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                    <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <a href="#">Перейти в коллекцию</a>
+              </div>
+            </div>
+
+            <div class="collection_item">
+              <div class="collection_item_img">
+                <img src="img/collection/2.png" alt="">
+              </div>
+              <div class="collection_item_text">
+                <div class="collection_item_text_main">
+                  <h2>Заготовок коллекции</h2>
+                  <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                    <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <a href="#">Перейти в коллекцию</a>
+              </div>
+            </div>
+
+            <div class="collection_item">
+              <div class="collection_item_img">
+                <img src="img/collection/3.png" alt="">
+              </div>
+              <div class="collection_item_text">
+                <div class="collection_item_text_main">
+                  <h2>Заготовок коллекции</h2>
+                  <p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                    <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <a href="#">Перейти в коллекцию</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <div class="fixed_menu">
+      <a href="#" class="fixed_menu_item">
+        <img src="img/fixed_menu/home.svg" alt="">
+      </a>
+      <a href="#" class="fixed_menu_item">
+        <img src="img/fixed_menu/catalog.svg" alt="">
+      </a>
+      <a href="#" class="fixed_menu_item">
+        <img src="img/fixed_menu/cart.svg" alt="">
+      </a>
+      <a href="#" class="fixed_menu_item">
+        <img src="img/fixed_menu/fav.svg" alt="">
+      </a>
+      <a href="#" class="fixed_menu_item current">
+        <img src="img/fixed_menu/user_white.svg" alt="">
+      </a>
+    </div>
+
+    <div class="drodown">
+      <div class="container">
+        <div class="drodown_top">
+          <div class="drodown_top_close">
+            <img src="img/close.svg" alt="">
+          </div>
+          <a href="#" class="drodown_top_logo">
+            <img src="img/header_logo.svg" alt="">
+          </a>
+        </div>
+        <div class="drodown_cats">
+          <ul>
+            <li class="drop" data-target="drop_1">
+              <span>Балаклава</span>
+              <img src="img/arrow_black.svg" alt="">
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+            <li class="drop" data-target="drop_2">
+              <span>Велосипедки</span>
+              <img src="img/arrow_black.svg" alt="">
+            </li>
+            <li class="drop" data-target="drop_3">
+              <span>Кальсоны</span>
+              <img src="img/arrow_black.svg" alt="">
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+            <li>
+              <a href="#">Бриджи</a>
+            </li>
+            <li>
+              <a href="#">Брюки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="drodown_menu">
+          <ul>
+            <li>
+              <a href="#">Карьера в Спаленке</a>
+            </li>
+            <li>
+              <a href="#">Студии планирования</a>
+            </li>
+            <li>
+              <a href="#">Адреса магазинов</a>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">Пункты выдачи</a>
+            </li>
+            <li>
+              <a href="#">Для бизнеса</a>
+            </li>
+          </ul>
+        </div>
+        <div class="drodown_footer">
+          <a href="tel:+70000000000" class="drodown_footer_tel">+7 000 000 00 00</a>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/footer/wap.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer/telegram.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="drodown_item" id="drop_1">
+        <div class="drodown_item_back">
+          <img src="img/arrow_black.svg" alt="">
+          <span>Назад</span>
+        </div>
+        <h3>Балаклава</h3>
+        <div class="drodown_item_body">
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/1.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/2.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/3.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/4.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/5.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/6.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/7.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/8.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="drodown_item" id="drop_2">
+        <div class="drodown_item_back">
+          <img src="img/arrow_black.svg" alt="">
+          <span>Назад</span>
+        </div>
+        <h3>Велосипедки</h3>
+        <div class="drodown_item_body">
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/1.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/2.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/3.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/4.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/5.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/6.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/7.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/8.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="drodown_item" id="drop_3">
+        <div class="drodown_item_back">
+          <img src="img/arrow_black.svg" alt="">
+          <span>Назад</span>
+        </div>
+        <h3>Кальсоны</h3>
+        <div class="drodown_item_body">
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/1.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/2.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/3.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/4.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/5.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/6.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/7.png" alt="">
+          </a>
+          <a href="#" class="drodown_item_body_block">
+            <h4>Дочерняя</h4>
+            <img src="img/cats/8.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_main">
+          <div class="footer_main_left">
+            <ul class="footer_main_left_nav">
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#">Коллекции</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              <li>
+                <a href="#">О компании</a>
+              </li>
+              <li>
+                <a href="#">Сотрудничество</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Проекты</a>
+              </li>
+            </ul>
+            <div class="footer_main_left_info">
+              <a href="tel:+70000000000" class="footer_main_left_info_tel">+7 000 000 00 00</a>
+              <ul>
+                <li>
+                  <a href="https://www.whatsapp.com/" target="_blank">
+                    <img src="img/footer/wap.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://telegram.org/" target="_blank">
+                    <img src="img/footer/telegram.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="footer_main_left_adres">90056734, Mосква, Poccия, улица Варшавская, 37/5, кв.574</p>
+          </div>
+          <div class="footer_main_right">
+            <h3>Бесплатная консультация с декоратором!</h3>
+            <p class="footer_main_right_text">Если вы затрудняетесь с выбором, оставьте заявку на бесплатную консультацию</p>
+            <form action="">
+              <div class="mf-name">
+                <div class="mf-text">
+                  Фамилия Имя<span class="mf-req">*</span>
+                </div>
+                <input type="text" name="user_name" value="" placeholder="Введите ваше имя">
+              </div>
+              <div class="mf-email">
+                <div class="mf-text">
+                  Email<span class="mf-req">*</span>
+                </div>
+                <input type="text" name="user_email" value="" placeholder="Введите ваш email адрес">
+              </div>
+              <div class="so_mf mf-phone">
+                <div class="mf-text">
+                  Номер телефона<span class="mf-req">*</span>
+                </div>
+                <input type="tel" name="user_phone" value="" placeholder="+7 (___) ___ - ___ - ___">
+              </div>
+              <input class="bttn" type="submit" name="submit" value="Отправить">
+            </form>
+            <p class="footer_main_right_politic">Продолжая, вы даете <a href="#">Согласие на обработку персональных данных</a></p>
+          </div>
+        </div>
+        <div class="footer_mid">
+          <div class="footer_mid_left">
+            <a href="#">
+              <img src="img/footer_logo.svg" alt="">
+            </a>
+            <ul>
+              <li>© 2025. Все права защищены</li>
+              <li>
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_mid_right">
+            <a href="#" target="_blank">
+              <img src="img/footer/appstore.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+              <img src="img/footer/googleplay.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_left">
+            <h5>Реквизиты компании</h5>
+            <ul>
+              <li>ИП ФИО</li>
+              <li>ИНН 000000000000</li>
+              <li>ОГРНИП 000000000000000</li>
+              <li>Расчётный счёт: 00000000000000000000</li>
+            </ul>
+          </div>
+          <div class="footer_bottom_right">
+            <img src="img/footer/sbp.png" alt="">
+            <img src="img/footer/mir.png" alt="">
+            <img src="img/footer/sber.png" alt="">
+            <img src="img/footer/tbank.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
