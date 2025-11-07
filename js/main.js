@@ -105,6 +105,84 @@ $(document).ready(function() {
     ]
   });
 
+  $('.about_team_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: true,
+    cssEase: 'linear',
+    arrows: true,
+    fade: false,
+    prevArrow: $('.about_team_wrap_arrows_prev'),
+    nextArrow: $('.about_team_wrap_arrows_next'),
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+
+  $('.upsale_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: true,
+    cssEase: 'linear',
+    arrows: true,
+    fade: false,
+    prevArrow: $('.upsale_top_btns_prev'),
+    nextArrow: $('.upsale_top_btns_next'),
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+
+  $(".about_form_btns_item").click(function() {
+    var attr = $(this).attr("data-target");
+    $(".about_form_btns_item").removeClass("active");
+    $(this).addClass("active");
+    $(".about_form_item").removeClass("active");
+    $(`#${attr}`).addClass("active");
+  });
+
   $('[data-fancybox="collection"]').fancybox({
     loop: true,               // зацикливает просмотр
     buttons: [
@@ -117,6 +195,17 @@ $(document).ready(function() {
     transitionEffect: "fade"  // плавное переключение
   });
 
+  $('[data-fancybox="sertif"]').fancybox({
+    loop: true,               // зацикливает просмотр
+    buttons: [
+      "zoom",
+      "slideShow",
+      "thumbs",
+      "close"
+    ],
+    animationEffect: "zoom",  // эффект анимации
+    transitionEffect: "fade"  // плавное переключение
+  });
 
   $('input[type=tel], input.phone').each(function(){
     $(this)
