@@ -9,6 +9,16 @@ $(document).ready(function() {
     $(".drodown").removeClass("active");
   });
 
+  $(".back_modal_product").click(function() {
+    $(this).removeClass("active");
+    $(".product_modal").removeClass("active");
+  });
+
+  $(".product_modal_close").click(function() {
+    $(".back_modal_product").removeClass("active");
+    $(".product_modal").removeClass("active");
+  });
+
   $(".drodown_cats .drop").click(function() {
     var attr = $(this).attr("data-target");
     $(".drodown").addClass("drop");
@@ -140,39 +150,105 @@ $(document).ready(function() {
     ]
   });
 
-  $('.upsale_slider').slick({
+  $('.upsale').each(function () {
+    const $section = $(this);
+    const $slider = $section.find('.upsale_slider');
+    const $prev = $section.find('.upsale_top_btns_prev');
+    const $next = $section.find('.upsale_top_btns_next');
+
+    $slider.slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true,
+      cssEase: 'linear',
+      arrows: true,
+      fade: false,
+      prevArrow: $prev,
+      nextArrow: $next,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
+  });
+
+  // product
+
+  $('.product_main_left_for_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    prevArrow: $('.product_main_left_for_prev'),
+    nextArrow: $('.product_main_left_for_next'),
+    asNavFor: '.product_main_left_nav_slider'
+  });
+
+  $('.product_main_left_nav_slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    dots: false,
-    infinite: true,
-    cssEase: 'linear',
+    asNavFor: '.product_main_left_for_slider',
+    vertical: true,
+    verticalSwiping: true,
+    focusOnSelect: true,
     arrows: true,
-    fade: false,
-    prevArrow: $('.upsale_top_btns_prev'),
-    nextArrow: $('.upsale_top_btns_next'),
+    prevArrow: $('.product_main_left_nav_prev'),
+    nextArrow: $('.product_main_left_nav_next'),
+    infinite: false,
     responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          vertical: false,
+          slidesToShow: 4,
         }
       }
     ]
+  });
+
+  // $('.product_main_left_nav_slider').on('mouseenter', '.slick-slide', function() {
+  //   const index = $(this).data('slick-index');
+  //   $('.product_main_left_for_slider').slick('slickGoTo', index);
+  // });
+
+  const $counter = $('.product_main_left_for_counter');
+  const $product_main_left_for_slider = $('.product_main_left_for_slider');
+
+  $product_main_left_for_slider.on('init reInit afterChange', function(event, slick, currentSlide) {
+    const i = (currentSlide ? currentSlide : 0) + 1;
+    $counter.text(i + ' / ' + slick.slideCount);
+  });
+
+  $product_main_left_for_slider.slick('slickGoTo', 0);
+
+  // product 
+
+  $(".product_tabs_nav_item").click(function() {
+    var attr = $(this).attr("data-id");
+    $(".product_tabs_nav_item").removeClass("active");
+    $(this).addClass("active");
+    $(".product_tabs_body_item").removeClass("active");
+    $(`#${attr}`).addClass("active");
   });
 
   $(".about_form_btns_item").click(function() {
@@ -182,6 +258,67 @@ $(document).ready(function() {
     $(".about_form_item").removeClass("active");
     $(`#${attr}`).addClass("active");
   });
+
+  $('.product_modal_left_for_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    prevArrow: $('.product_modal_left_for_prev'),
+    nextArrow: $('.product_modal_left_for_next')
+  });
+
+  const $modalProduct = $('.product_modal_left_for_slider');
+  const $modalCounter = $('.product_modal_left_for_counter');
+
+  $modalProduct.on('init reInit afterChange', function (event, slick, currentSlide) {
+    // currentSlide может быть undefined при init
+    const i = (currentSlide ? currentSlide : 0) + 1;
+    $modalCounter.text(i + ' / ' + slick.slideCount);
+  });
+
+  function initProductSlider() {
+    const $slider = $('.product_assessments_media_slider');
+    const slideCount = $slider.find('a').length;
+
+    // Проверяем условия: экран ≤ 991px и слайдов ≥ 8
+    if ($(window).width() > 991 && slideCount >= 8) {
+      if (!$slider.hasClass('slick-initialized')) {
+        $slider.slick({
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          infinite: false,
+          dots: false,
+          arrows: true,
+          prevArrow: $('.product_assessments_media_prev'),
+          nextArrow: $('.product_assessments_media_next'),
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+          ],
+        });
+      }
+    } else {
+      // Уничтожаем слайдер, если условия не выполняются
+      if ($slider.hasClass('slick-initialized')) {
+        $slider.slick('unslick');
+      }
+    }
+  }
+
+  initProductSlider();
 
   $('[data-fancybox="collection"]').fancybox({
     loop: true,               // зацикливает просмотр
